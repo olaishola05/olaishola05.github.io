@@ -117,7 +117,6 @@ li {
     letter-spacing: 0.03em;
     margin-top: 50px;
     background: white;
-    color: #6070ff;
   }
 
   .connectBtn:hover {
@@ -133,6 +132,7 @@ li {
   .social-items li {
     margin-right: 15px;
   }
+
   .social img {
     width: 25px;
     height: 25px;
