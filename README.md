@@ -3,6 +3,11 @@
 # My Portfolio
 
 ![screenshot](./images/portfolio.png)
+![work1](./images/work1.png)
+![work2](./images/work2.png)
+![work3](./images/wk4.png)
+![work4](./images/work3.png)
+![about](./images/about.png)
 
 A developer portfolio to house all my projects
 
