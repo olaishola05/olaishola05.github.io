@@ -229,6 +229,10 @@ img {
   padding: 0;
 }
 
+.languages {
+  margin-top: 50px;
+}
+
 .language-wrapper {
   margin-bottom: 50px;
 }
@@ -279,6 +283,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.work-btn:hover {
+  color: #fff;
+  background: #6070ff;
 }
 
 .about {
@@ -343,12 +352,7 @@ img {
   align-items: center;
 }
 
-/* .resumeBtn a {
-  width: 138px;
-  height: 24px;
-
-} */
-
-.languages {
-  margin-top: 50px;
+.resumeBtn:hover {
+  background: #6070ff;
+  color: white;
 }
