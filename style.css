@@ -142,12 +142,15 @@ li {
 .card-item-1 {
   grid-area: card-1;
 }
+
 .card-item-2 {
   grid-area: card-2;
 }
+
 .card-item-3 {
   grid-area: card-3;
 }
+
 .card-item-4 {
   grid-area: card-4;
 }
@@ -190,6 +193,7 @@ li {
   line-height: 44px;
   margin: 0;
 }
+
 .work-text {
   width: 295px;
   height: 76px;
@@ -205,7 +209,6 @@ li {
 
 .stacks {
   margin-top: 10px;
-  /* border: 1px solid red; */
 }
 
 .stacks ul {
@@ -231,11 +234,13 @@ li {
   border-radius: 8px;
 }
 
-.card-work span {
+.card-work span,
+img {
   font-style: normal;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+  margin-right: 10px;
 }
 
 .card-work > img {
@@ -317,6 +322,7 @@ li {
   margin: 12px 0px;
   background: white;
 }
+
 .resumeBtn a {
   width: 138px;
   height: 24px;
@@ -328,8 +334,23 @@ li {
   color: #396df2;
 }
 
-/* Mobile Responsive */
+.languages {
+  margin-top: 50px;
+}
 
-/* @media all and (max-width: 500px) {
-  
-} */
+.language-wrapper {
+  margin-bottom: 50px;
+}
+
+.language-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  border-bottom: 1px solid #dfe1e6;
+  height: 60px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
