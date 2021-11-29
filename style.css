@@ -242,6 +242,7 @@ img {
   width: 203px;
   height: 24px;
   margin: 12px 0px;
+  padding: 0;
 }
 
 .stacks ul li {
@@ -251,11 +252,13 @@ img {
   font-size: 12px;
   line-height: 16px;
   float: left;
-  color: #6070FF;
-  background: #EBEBFF;
+  color: #6070ff;
+  background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .card-work > img {
