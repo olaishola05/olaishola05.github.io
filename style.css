@@ -211,12 +211,12 @@ img {
 .stacks {
   margin-top: 10px;
 }
-
+/*
 .stacks ul {
   width: 203px;
   height: 30px;
   background: white;
-  /* display: flex; */
+  display: flex; 
   justify-content: space-between;
   margin-right: 10px;
   align-items: center;
@@ -235,6 +235,27 @@ img {
   padding: 4px 12px;
   border-radius: 8px;
   margin: 2px;
+}
+*/
+
+.stacks ul {
+  width: 203px;
+  height: 24px;
+  margin: 12px 0px;
+}
+
+.stacks ul li {
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  float: left;
+  color: #6070FF;
+  background: #EBEBFF;
+  border-radius: 8px;
+  padding: 4px 12px;
+
 }
 
 .card-work > img {
