@@ -216,7 +216,7 @@ img {
   width: 203px;
   height: 30px;
   background: white;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   margin-right: 10px;
   align-items: center;
@@ -224,6 +224,7 @@ img {
 }
 
 .stacks ul li {
+  float: left;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -233,6 +234,7 @@ img {
   background: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
+  margin: 2px;
 }
 
 .card-work > img {
