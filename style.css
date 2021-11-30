@@ -402,3 +402,11 @@ img {
 .items:hover {
   border: 1px solid dodgerblue;
 }
+
+.form-section{
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 779px;
+  margin: 0 auto;
+}
