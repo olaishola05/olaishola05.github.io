@@ -241,10 +241,9 @@
             </ul>
             <button type="button" class="resumeBtn">Get my resume</button>
           </div>
-
           <div class="languages">
             <ul class="language-wrapper">
-              <li class="language">
+              <li class="language tech">
                 Languages <i class="fas fa-chevron-down"></i>
               </li>
               <li class="items">
@@ -259,16 +258,61 @@
                 <img src="./images/Ellipse-css.svg" alt="css" />
                 <span>CSS</span>
               </li>
-              <li class="frame">
+              <li class="tech">
                 Frameworks <i class="fas fa-chevron-right"></i>
               </li>
-              <li class="skills">
-                Skills <i class="fas fa-chevron-right"></i>
-              </li>
+              <li class="tech">Skills <i class="fas fa-chevron-right"></i></li>
             </ul>
           </div>
         </section>
       </div>
     </div>
+    <footer class="form-section">
+      <h2>Contact me</h2>
+      <div class="form-text">
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+      <form
+        class="form-class"
+        action="https://formspree.io/f/xzbopydg"
+        method="POST"
+      >
+        <label for="name">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Yeremias"
+            minlength="3"
+            maxlength="30"
+            required
+          />
+        </label>
+        <label for="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="natajayanj14@gmail.com"
+            required
+          />
+        </label>
+        <label for="mail-content">
+          <textarea
+            id="mail-content"
+            name="mail-content"
+            maxlength="500"
+            required
+            placeholder="Write your message here"
+          ></textarea>
+        </label>
+        <button class="contact-btn" type="submit">Get In Touch</button>
+      </form>
+      <img class="bar" src="./images/Shape.svg" alt="vertical bar" />
+    </footer>
   </body>
 </html>

@@ -8,6 +8,7 @@
 ![work3](./images/wk4.png)
 ![work4](./images/work3.png)
 ![about](./images/about.png)
+![about](./images/contact-form.png)
 
 A developer portfolio to house all my projects
 
