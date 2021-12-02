@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  border: 1px solid red;
 }
 
 body {
@@ -57,6 +58,10 @@ li {
 .navbar .menu {
   text-align: right;
   color: #6070ff;
+}
+
+.nav-link {
+  display: none;
 }
 
 .headline {
@@ -122,6 +127,7 @@ li {
 
 .social-items li {
   margin-right: 15px;
+  color: #505f79;
 }
 
 .card-work span,
@@ -524,6 +530,7 @@ input {
 .contact-btn:hover {
   background: #6070ff;
   color: white;
+  cursor: pointer;
 }
 
 .contact-btn:active {
@@ -534,4 +541,145 @@ input {
 .contact-btn:disabled {
   background: white;
   color: #5e6c84;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: #e5e5e5;
+  }
+
+  .navbar {
+    width: 1350px;
+    border: 1px solid yellow;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar ul,
+  .logo {
+    flex: 1;
+    border: 1px solid darkred;
+    margin: 0;
+  }
+
+  .logo {
+    padding-left: 50px;
+  }
+
+  .nav-link {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navbar ul a {
+    padding-right: 50px;
+    display: flex;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .hero {
+    width: 1350px;
+    height: 700px;
+    background: rgb(255, 255, 255) url("./images/Header bg.svg") no-repeat;
+    background-size: contain;
+    padding: 24px;
+  }
+
+  .title {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+
+  .title h1,
+  .title h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .description p {
+    width: 800px;
+    height: 98px;
+  }
+
+  .connect {
+    width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .social {
+    margin-left: 250px;
+  }
+
+  .social img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .about-wrapper {
+    width: 1350px;
+    height: 924px;
+    /* display: flex; */
+    border: 1px solid red;
+  }
+
+  .form-section {
+    min-width: 1350px;
+    display: flex;
+    flex-direction: columns;
+    background: #6070ff url("./images/contact form background shapes.svg")
+      no-repeat;
+    background-size: contain;
+  }
+
+  .form-class {
+    width: 460px;
+  }
+
+  .form-text p {
+    width: 550px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 447px;
+    height: 48px;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    margin-bottom: 27px;
+  }
+
+  .form-class #mail-content {
+    width: 447px;
+    height: 170px;
+  }
+
+  .contact-btn {
+    margin: 0 auto;
+  }
+
+  .bar {
+    display: none;
+  }
 }
