@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -60,7 +60,7 @@ li {
   color: #6070ff;
 }
 
-.nav-link {
+.navbar ul {
   display: none;
 }
 
@@ -175,6 +175,13 @@ img {
   padding-top: 30px;
 }
 
+/* .card-item-5,
+.card-item-6,
+.card-item-7,
+.card-item-8 {
+  display: none;
+} */
+
 .card {
   width: 327px;
   min-height: 580px;
@@ -279,7 +286,7 @@ img {
 }
 
 .about-wrapper {
-  height: 1100px;
+  /* height: 1100px; */
   background: #fff;
   border-top-right-radius: 60px;
   border: 0.1px solid #dfe1e6;
@@ -303,7 +310,6 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0;
 }
 
 .about-desc {
@@ -366,7 +372,6 @@ img {
   margin-top: 30px;
   background: #fff;
   padding-bottom: 40px;
-  height: 1263px;
 }
 
 .language {
@@ -543,31 +548,30 @@ input {
   color: #5e6c84;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   body {
     background: #e5e5e5;
+    max-width: 1100px;
   }
 
   .navbar {
     width: 1350px;
-    border: 1px solid yellow;
     padding: 0;
     display: flex;
+    padding-right: 155px;
+    padding-left: 155px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .navbar ul,
   .logo {
-    flex: 1;
-    border: 1px solid darkred;
+    /* flex: 1; */
     margin: 0;
   }
 
-  .logo {
-    padding-left: 50px;
-  }
-
-  .nav-link {
-    display: block;
+  .navbar ul {
+    display: flex;
   }
 
   .menu {
@@ -577,6 +581,11 @@ input {
   .navbar ul a {
     padding-right: 50px;
     display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
   }
 
   .headline {
@@ -627,6 +636,7 @@ input {
 
   .social {
     margin-left: 250px;
+    display: block;
   }
 
   .social img {
@@ -636,9 +646,77 @@ input {
 
   .about-wrapper {
     width: 1350px;
-    height: 924px;
-    /* display: flex; */
-    border: 1px solid red;
+    height: 668px;
+    padding: 90px;
+  }
+
+  .headline-about {
+    display: flex;
+  }
+
+  .about-flex {
+    overflow: hidden;
+    padding: 30px;
+  }
+
+  .about-desc {
+    width: 440px;
+    height: 102px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-bottom: 24px;
+  }
+
+  .social-about {
+    margin: 0;
+  }
+
+  .languages {
+    margin: 0;
+  }
+
+  .language-wrapper {
+    padding: 30px;
+  }
+
+  .language-wrapper .tech {
+    width: 582px;
+  }
+
+  .items-container {
+    display: flex;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    margin: 0px 12px;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .items > span {
+    margin-top: 16px;
+  }
+
+  .about {
+    margin: 0;
+  }
+
+  .about h2,
+  .about span {
+    margin-left: 0;
+  }
+
+  .about-desc {
+    width: 447px;
+    height: 114px;
+    margin: 0;
+    margin-bottom: 12px;
+    margin-top: 15px;
   }
 
   .form-section {
@@ -682,4 +760,104 @@ input {
   .bar {
     display: none;
   }
+
+  /* card works */
+  /* .card-item-5,
+  .card-item-6,
+  .card-item-7,
+  .card-item-8 {
+    display: grid;
+  } */
+
+  .card-item-5 {
+    grid-area: card-5;
+  }
+
+  .card-item-6 {
+    grid-area: card-6;
+  }
+
+  .card-item-7 {
+    grid-area: card-7;
+  }
+
+  .card-item-8 {
+    grid-area: card-8;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .work-container {
+    display: grid;
+    grid-gap: 1rem;
+    padding-top: 30px;
+  }
+
+  .card {
+    width: 1000px;
+    min-height: 360px;
+    margin: 60px auto 0px;
+  }
+
+  .card-work {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card-work > img {
+    width: 419.09px;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid red;
+  }
+
+  .card-work .work-details {
+    width: 50%;
+    border: 1px solid red;
+    padding: 20px;
+  }
+
+  .card-work h2 {
+    width: 496px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .work-text {
+    width: 380px;
+    height: 53px;
+  }
+
+  .stacks ul {
+    width: 290px;
+    height: 30px;
+    background: white;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .card-work .card-item-8 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .card-item-1,
+  .card-item-2,
+  .card-item-3,
+  .card-item-4 {
+    display: none;
+  }
+
+  /* .card-desc {
+    display: flex;
+    flex-direction: column;
+  } */
 }
