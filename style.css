@@ -285,7 +285,6 @@ img {
 }
 
 .about-wrapper {
-  /* height: 1100px; */
   background: #fff;
   border-top-right-radius: 60px;
   border: 0.1px solid #dfe1e6;
@@ -819,7 +818,7 @@ input {
   }
 
   .work-text {
-    width: 380px;
+    width: 410px;
     height: 53px;
   }
 
@@ -842,6 +841,10 @@ input {
   .card-item-8 {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .work-btn {
+    margin-top: 20px;
   }
 
   /* mobile screen */
