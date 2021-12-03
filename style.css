@@ -712,7 +712,8 @@ input {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    background: #6070ff url("./images/contact form background shapes.svg")
+    background:
+      #6070ff url("./images/contact form background shapes.svg")
       no-repeat;
     background-size: contain;
   }
