@@ -656,15 +656,6 @@ input {
     padding: 30px;
   }
 
-  .about-desc {
-    width: 440px;
-    height: 102px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
-    margin-bottom: 24px;
-  }
-
   .social-about {
     margin: 0;
   }
@@ -683,6 +674,7 @@ input {
 
   .items-container {
     display: flex;
+    padding: 0;
   }
 
   .items {
@@ -690,7 +682,7 @@ input {
     flex-direction: column;
     width: 122px;
     height: 120px;
-    margin: 0px 12px;
+    margin: 0 12px;
     padding: 10px;
     margin-left: 0;
   }
@@ -719,8 +711,9 @@ input {
   .form-section {
     min-width: 1350px;
     display: flex;
-    flex-direction: columns;
-    background: #6070ff url("./images/contact form background shapes.svg")
+    flex-direction: column;
+    background:
+      #6070ff url("./images/contact form background shapes.svg")
       no-repeat;
     background-size: contain;
   }
