@@ -9,6 +9,7 @@
 ![work4](./images/work3.png)
 ![about](./images/about.png)
 ![about](./images/contact-form.png)
+![Desktop-version](./images/desktop.png)
 
 A developer portfolio to house all my projects
 
