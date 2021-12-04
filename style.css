@@ -21,7 +21,7 @@ body {
   background-size: cover;
   padding: 24px;
   border-bottom-left-radius: 60px;
-  width: 100%;
+  width: 100%;h
 }
 
 a {
@@ -591,6 +591,12 @@ input {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition: all 0.5s ease-out;
+  }
+
+  .navbar ul a:hover{
+    background-color: #6070FF;
+    color: white;
   }
 
   .headline {
