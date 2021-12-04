@@ -12,7 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  max-width: 480px;
+  width: 100%;
   background-color: #f5f5f5;
 }
 
@@ -21,6 +21,7 @@ body {
   background-size: cover;
   padding: 24px;
   border-bottom-left-radius: 60px;
+  width: 100%;
 }
 
 a {
@@ -66,6 +67,7 @@ li {
 .headline {
   margin-top: 80px;
   height: 500px;
+  width: 100%;
 }
 
 .title {
@@ -86,7 +88,7 @@ li {
   margin: 0 auto;
 }
 
-.description p {
+.description {
   width: 327px;
   height: 120px;
   font-style: normal;
@@ -182,7 +184,7 @@ img {
 }
 
 .card {
-  width: 327px;
+  min-width: 327px;
   min-height: 580px;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -193,7 +195,7 @@ img {
 }
 
 .card-work {
-  width: 90%;
+  max-width: 90%;
   padding-top: 20px;
   margin: 0 auto;
 }
@@ -285,6 +287,7 @@ img {
 }
 
 .about-wrapper {
+  width: 100%;
   background: #fff;
   border-top-right-radius: 60px;
   border: 0.1px solid #dfe1e6;
@@ -376,17 +379,21 @@ img {
   border-bottom: none !important;
 }
 
+.language-wrapper {
+  padding: 0;
+}
+
 .language-wrapper .tech {
   display: flex;
   justify-content: space-between;
   width: 300px;
-  border-bottom: 1px solid #dfe1e6;
   height: 60px;
   align-items: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  padding-left: 34px;
 }
 
 .items > span {
@@ -413,6 +420,7 @@ img {
 }
 
 .form-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,7 +554,7 @@ input {
   color: #5e6c84;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   body {
     background: #e5e5e5;
     max-width: 100%;
@@ -588,7 +596,6 @@ input {
   .headline {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
   }
 
   .hero {
@@ -615,7 +622,7 @@ input {
     margin: 0 auto;
   }
 
-  .description p {
+  .description {
     width: 800px;
     height: 98px;
   }
@@ -632,8 +639,9 @@ input {
   }
 
   .social {
-    margin-left: 250px;
+    margin: 0;
     display: block;
+    margin-left: 210px;
   }
 
   .social img {
@@ -712,8 +720,7 @@ input {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    background:
-      #6070ff url("./images/contact form background shapes.svg")
+    background: #6070ff url("./images/contact form background shapes.svg")
       no-repeat;
     background-size: contain;
   }
@@ -776,8 +783,6 @@ input {
   .work-container {
     display: flex;
     flex-direction: column;
-    margin-left: 220px;
-    margin-right: 166px;
   }
 
   .card {
