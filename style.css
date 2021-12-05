@@ -356,11 +356,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .1s linear;
 }
 
 .resumeBtn:hover {
   background: #6070ff;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: translateY(9px);
+  cursor: pointer;
 }
 
 .resumeBtn:active {
