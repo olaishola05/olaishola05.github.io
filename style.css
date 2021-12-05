@@ -129,6 +129,12 @@ li {
 .social-items li {
   margin-right: 15px;
   color: #505f79;
+  transition: border-bottom 1s ease-in-out 0.2s;
+}
+
+.social-items li:hover{
+  border-bottom: 1px solid rgb(96, 112, 255);
+  transform:scale(1.5);
 }
 
 .card-work span,
