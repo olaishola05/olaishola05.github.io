@@ -21,7 +21,7 @@ body {
   background-size: cover;
   padding: 24px;
   border-bottom-left-radius: 60px;
-  width: 100%;h
+  width: 100%;
 }
 
 a {
@@ -121,14 +121,32 @@ li {
   background: white;
 }
 
+.social-items li {
+  margin-right: 15px;
+  color: #505f79;
+  transition: border-bottom 1s ease-in-out 0.2s;
+}
+
+.stacks ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+  text-align: center;
+  background: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
 .social-items {
   display: flex;
   padding: 0;
 }
 
-.social-items li {
-  margin-right: 15px;
-  color: #505f79;
+.social-items li:hover {
+  border-bottom: 1px solid rgb(96, 112, 255);
+  transform: scale(1.5);
 }
 
 .card-work span,
@@ -237,18 +255,6 @@ img {
   padding: 0;
 }
 
-.stacks ul li {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #6070ff;
-  text-align: center;
-  background: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
-}
-
 .card-work > img {
   width: 295px;
   height: 220px;
@@ -350,11 +356,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.1s linear;
 }
 
 .resumeBtn:hover {
   background: #6070ff;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  transform: translateY(9px);
+  cursor: pointer;
 }
 
 .resumeBtn:active {
@@ -584,19 +594,28 @@ input {
   }
 
   .navbar ul a {
-    padding-right: 50px;
     display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    transition: all 0.5s ease-out;
+    padding: 0.3rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.8s ease-out;
   }
 
-  .navbar ul a:hover {
+  .navbar ul a:hover,
+  .navbar ul a:focus {
     background-color: #6070ff;
     color: white;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   }
 
   .headline {
@@ -816,8 +835,14 @@ input {
       rgba(0, 0, 0, 0.12) 0 4px 6px,
       rgba(0, 0, 0, 0.17) 0 12px 13px,
       rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    transition: box-shadow 200ms ease-in-out, transform 500ms ease-in-out;
+    transition:
+      box-shadow 200ms ease-in-out,
+      transform 500ms ease-in-out,
+      width 500ms ease-in-out,
+      height 500ms ease-in-out;
     transform: translateY(-8px);
+    width: 70%;
+    height: 200px;
   }
 
   .card > img {
