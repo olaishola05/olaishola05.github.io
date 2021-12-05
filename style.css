@@ -591,12 +591,21 @@ input {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    transition: all 0.5s ease-out;
+    padding: 0.3rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.8s ease-out;
   }
 
-  .navbar ul a:hover {
+  .navbar ul a:hover, .navbar ul a:focus{
     background-color: #6070ff;
     color: white;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
   .headline {
