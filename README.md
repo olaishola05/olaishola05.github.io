@@ -19,16 +19,20 @@ A developer portfolio to house all my projects
 - CSS
 - Figma
 
+## Visit my Portfolio
+
+[Live Here](https://netman5.github.io/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-clone repo: `git clone https://github.com/netman5/Micronaut`
+clone repo: `git clone https://github.com/netman5/netman5.github.io`
 
 then
-`cd Micronaut`
+`cd netman5.github.io`
 
 ### Install
 
