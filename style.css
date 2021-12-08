@@ -110,7 +110,7 @@ li {
 .connect {
   width: 150px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #7f8cff;
   display: flex;
@@ -129,7 +129,7 @@ li {
 
 .stacks ul li {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
@@ -333,7 +333,7 @@ img {
 .about-connect {
   width: 150px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #7f8cff;
   margin-top: 20px;
@@ -668,7 +668,7 @@ input {
   .connect {
     width: 150px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: #7f8cff;
     margin-top: 0;
