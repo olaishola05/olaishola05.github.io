@@ -446,38 +446,32 @@
         action="https://formspree.io/f/xzbopydg"
         method="POST"
       >
-        <label for="name">
-          <input
-            type="text"
-            id="name"
-            title="name"
-            name="name"
-            placeholder="Yeremias"
-            minlength="3"
-            maxlength="30"
-            required
-          />
-        </label>
-        <label for="email">
-          <input
-            type="email"
-            id="email"
-            title="email"
-            name="email"
-            placeholder="natajayanj14@gmail.com"
-            required
-          />
-        </label>
-        <label for="mail-content">
-          <textarea
-            id="mail-content"
-            title="mail-content"
-            name="mail-content"
-            maxlength="500"
-            required
-            placeholder="Write your message here"
-          ></textarea>
-        </label>
+        <label for="name">Full Name: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Yeremias Smith"
+          minlength="3"
+          maxlength="30"
+          required
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="natajayanj14@gmail.com"
+          required
+        />
+        <label for="mail-content">Message: </label>
+        <textarea
+          id="mail-content"
+          name="mail-content"
+          maxlength="500"
+          required
+          placeholder="Write your message here"
+        ></textarea>
         <button class="contact-btn" type="submit">Get In Touch</button>
       </form>
       <img class="bar" src="./images/Shape.svg" alt="bottom vertical bar" />
