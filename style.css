@@ -110,9 +110,9 @@ li {
 .connect {
   width: 150px;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1a30ff;
   display: flex;
   align-items: center;
   text-align: center;
@@ -129,15 +129,14 @@ li {
 
 .stacks ul li {
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 12px;
   line-height: 16px;
-  color: #6070ff;
+  color: #1a30ff;
   text-align: center;
   background: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
-  margin-right: 5px;
 }
 
 .social-items {
@@ -436,7 +435,7 @@ img {
   flex-direction: column;
   align-items: center;
   height: 805px;
-  background: #6070ff url('./images/contact-form-shapes-mobile.svg') no-repeat;
+  background: #1a30ff url('./images/contact-form-shapes-mobile.svg') no-repeat;
   background-size: cover;
   padding: 35px;
   border-radius: 50px 0 0 0;
@@ -879,7 +878,7 @@ input {
   }
 
   .four-stacks ul {
-    width: 350px;
+    width: 300px;
     justify-content: space-between;
     color: red;
   }
