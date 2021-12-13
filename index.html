@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -16,7 +17,6 @@
       gtag('config', 'UA-204397688-1');
     </script>
 
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ola Ishola Portfolio home page</title>
@@ -48,7 +48,7 @@
           <i class="fas fa-bars menu" id="menu"></i>
         </nav>
         <aside class="mobile-menu">
-          <button class="toggle-btn">X</button>
+          <button type="button" class="toggle-btn">X</button>
           <ul>
             <li class="nav-link"><a href="#work">Portfolio</a></li>
             <li class="nav-link"><a href="#about">About</a></li>
@@ -440,7 +440,7 @@
         </section>
       </div>
     </div>
-    <footer class="form-section">
+    <footer class="form-section" id="contact">
       <h2>Contact me</h2>
       <div class="form-text">
         <p>
@@ -453,7 +453,7 @@
         class="form-class"
         action="https://formspree.io/f/xzbopydg"
         method="POST"
-      id="contact">
+      >
         <label for="name">Full Name: </label>
         <input
           type="text"

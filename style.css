@@ -45,6 +45,14 @@ li {
   flex: 1;
 }
 
+.mobile-menu ul li a {
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
 .navbar .logo a {
   width: 76px;
   height: 20px;
@@ -68,29 +76,26 @@ li {
   position: absolute;
   height: 750px;
   width: 100%;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
+  bottom: 0;
   visibility: hidden;
   background: #6070ff;
   backdrop-filter: blur(7px);
   mix-blend-mode: multiply;
-  transition: all 0.3s fade-in-out;
 }
 
 .mobile-menu ul {
   margin-top: 60px;
 }
 
-.mobile-menu ul li {
-  line-height: 64px;
+.social-items li {
+  margin-right: 15px;
+  color: #505f79;
+  transition: border-bottom 1s ease-in-out 0.2s;
 }
 
-.mobile-menu ul li a {
-  font-weight: 600;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  color: #fff;
+.mobile-menu ul li {
+  line-height: 64px;
 }
 
 .toggle-btn {
@@ -165,12 +170,6 @@ li {
   letter-spacing: 0.03em;
   margin-top: 50px;
   background: white;
-}
-
-.social-items li {
-  margin-right: 15px;
-  color: #505f79;
-  transition: border-bottom 1s ease-in-out 0.2s;
 }
 
 .stacks ul li {
