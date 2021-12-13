@@ -52,12 +52,61 @@ li {
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
-  color: #6070ff;
+  color: rgb(96, 112, 255);
 }
 
 .navbar .menu {
   text-align: right;
   color: #6070ff;
+}
+
+.navbar .desktop-nav {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  height: 800px;
+  width: 375px;
+  top: 0px;
+  border-radius: 0px;
+  visibility: hidden;
+  background: #6070ff;
+  backdrop-filter: blur(6px);
+  mix-blend-mode: multiply;
+}
+
+.mobile-menu ul {
+  margin-top: 60px;
+}
+
+.mobile-menu ul li {
+  line-height: 64px;
+}
+
+.mobile-menu ul li a {
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.toggle-btn {
+  height: 12px;
+  width: 12px;
+  font-size: 20px;
+  float: right;
+  margin-right: 50px;
+  color: #fff;
+  padding: 10px;
+  background: #6070ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .headline {
@@ -600,10 +649,6 @@ input {
     border-radius: 4px;
     text-align: center;
     transition: all 0.8s ease-out;
-  }
-
-  .mobile-menu {
-    display: none;
   }
 
   .navbar ul a:hover,
