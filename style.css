@@ -82,6 +82,7 @@ li {
   background: #6070ff;
   backdrop-filter: blur(7px);
   mix-blend-mode: multiply;
+  overflow: auto;
 }
 
 .mobile-menu ul {
@@ -140,7 +141,7 @@ li {
 }
 
 .description {
-  width: 327px;
+  width: 100%;
   height: 120px;
   font-style: normal;
   font-weight: normal;
@@ -365,7 +366,7 @@ img {
 }
 
 .about-desc {
-  width: 327px;
+  width: 100%;
   height: 144px;
   font-style: normal;
   font-weight: normal;
@@ -373,6 +374,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .about-connect {
@@ -522,13 +524,13 @@ img {
 }
 
 .form-class {
-  width: 375px;
+  width: 350px;
   display: flex;
   flex-direction: column;
 }
 
 input {
-  width: 327px;
+  width: 305px;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -542,7 +544,7 @@ input {
 }
 
 .form-class #mail-content {
-  width: 327px;
+  width: 305px;
   height: 114px;
   font-style: normal;
   font-weight: normal;
