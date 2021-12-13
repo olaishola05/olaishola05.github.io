@@ -60,10 +60,6 @@ li {
   color: #6070ff;
 }
 
-.navbar ul {
-  display: none;
-}
-
 .desktop-nav {
   display: none;
 }
@@ -76,8 +72,9 @@ li {
   border-radius: 0px;
   visibility: hidden;
   background: #6070ff;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(7px);
   mix-blend-mode: multiply;
+  transition: all 0.1s fade-in-out;
 }
 
 .mobile-menu ul {
@@ -101,7 +98,7 @@ li {
   width: 12px;
   font-size: 20px;
   float: right;
-  margin-right: 50px;
+  margin-right: 38px;
   color: #fff;
   padding: 10px;
   background: #6070ff;
@@ -645,6 +642,10 @@ input {
   }
 
   .menu {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
