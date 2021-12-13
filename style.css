@@ -73,11 +73,10 @@ li {
 }
 
 .mobile-menu {
-  position: absolute;
-  height: 750px;
+  position: fixed;
+  height: 100vh;
   width: 100%;
   top: 0;
-  bottom: 0;
   visibility: hidden;
   background: #6070ff;
   backdrop-filter: blur(7px);
