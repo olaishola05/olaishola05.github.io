@@ -11,9 +11,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-204397688-1");
+      gtag('config', 'UA-204397688-1');
     </script>
 
     <meta charset="UTF-8" />
@@ -40,13 +40,21 @@
           <a href="#">Olaish</a>
         </div>
         <nav>
+          <ul class="desktop-nav">
+            <li class="nav-link"><a href="#">Portfolio</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+          </ul>
+          <i class="fas fa-bars menu" id="menu"></i>
+        </nav>
+        <aside class="mobile-menu">
+          <button class="toggle-btn">X</button>
           <ul>
             <li class="nav-link"><a href="#">Portfolio</a></li>
             <li class="nav-link"><a href="#">About</a></li>
             <li class="nav-link"><a href="#">Contact</a></li>
           </ul>
-          <i class="fas fa-bars menu"></i>
-        </nav>
+        </aside>
       </header>
 
       <!-- Hero -->
@@ -476,5 +484,6 @@
       </form>
       <img class="bar" src="./images/Shape.svg" alt="bottom vertical bar" />
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
