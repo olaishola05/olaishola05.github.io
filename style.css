@@ -65,16 +65,16 @@ li {
 }
 
 .mobile-menu {
-  position: fixed;
-  height: 800px;
-  width: 375px;
+  position: absolute;
+  height: 750px;
+  width: 100%;
   top: 0px;
-  border-radius: 0px;
+  bottom: 0px;
   visibility: hidden;
   background: #6070ff;
   backdrop-filter: blur(7px);
   mix-blend-mode: multiply;
-  transition: all 0.1s fade-in-out;
+  transition: all 0.3s fade-in-out;
 }
 
 .mobile-menu ul {
