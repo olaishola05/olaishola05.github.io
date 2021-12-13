@@ -60,7 +60,7 @@ li {
   color: #6070ff;
 }
 
-.navbar .desktop-nav {
+.navbar > ul {
   display: none;
 }
 
