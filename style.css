@@ -115,6 +115,19 @@ li {
   font-weight: bold;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 343px;
+  height: 620px;
+  margin-top: 60px;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
 .headline {
   margin-top: 80px;
   height: 500px;
@@ -159,7 +172,7 @@ li {
 }
 
 .connect {
-  width: 150px;
+  width: 200px;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -813,8 +826,7 @@ input {
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    background:
-      #1a30ff url('./images/contact form background shapes.svg')
+    background: #1a30ff url('./images/contact form background shapes.svg')
       no-repeat;
     background-size: contain;
   }
@@ -889,17 +901,11 @@ input {
   }
 
   .card:hover {
-    box-shadow:
-      rgba(0, 0, 0, 0.25) 0 54px 55px,
-      rgba(0, 0, 0, 0.12) 0 -12px 30px,
-      rgba(0, 0, 0, 0.12) 0 4px 6px,
-      rgba(0, 0, 0, 0.17) 0 12px 13px,
-      rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    transition:
-      box-shadow 200ms ease-in-out,
-      transform 500ms ease-in-out,
-      width 500ms ease-in-out,
-      height 500ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px,
+      rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px,
+      rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+    transition: box-shadow 200ms ease-in-out, transform 500ms ease-in-out,
+      width 500ms ease-in-out, height 500ms ease-in-out;
     transform: translateY(-8px);
     width: 70%;
     height: 200px;
@@ -975,4 +981,49 @@ input {
     display: flex;
     justify-content: center;
   }
+}
+
+/* Modal Section */
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(76, 78, 82);
+  background-color: rgb(76, 78, 82, 0.2);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fefefe;
+  width: 80%;
+  max-width: 100%;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.modal-btn {
+  width: 146px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #6070ff;
 }
