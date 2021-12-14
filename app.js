@@ -11,6 +11,7 @@ const images = document.querySelector('.scale');
 // eslint-disable-next-line no-return-assign
 projects.map((project) => {
   images.src = projects[0].image;
+  return images;
 });
 
 const toggleSideMenu = false;
