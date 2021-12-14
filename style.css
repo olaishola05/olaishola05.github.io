@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-  background: rgb(255, 255, 255) url("./images/header-shapes-bg.svg") no-repeat;
+  background: rgb(255, 255, 255) url('./images/header-shapes-bg.svg') no-repeat;
   background-size: cover;
   padding: 24px;
   border-bottom-left-radius: 60px;
@@ -45,6 +45,14 @@ li {
   flex: 1;
 }
 
+.mobile-menu ul li a {
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
 .navbar .logo a {
   width: 76px;
   height: 20px;
@@ -60,8 +68,51 @@ li {
   color: #6070ff;
 }
 
-.navbar ul {
+.desktop-nav {
   display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  visibility: hidden;
+  background: #6070ff;
+  backdrop-filter: blur(7px);
+  mix-blend-mode: multiply;
+  overflow: auto;
+}
+
+.mobile-menu ul {
+  margin-top: 60px;
+}
+
+.social-items li {
+  margin-right: 15px;
+  color: #505f79;
+  transition: border-bottom 1s ease-in-out 0.2s;
+}
+
+.mobile-menu ul li {
+  line-height: 64px;
+}
+
+.toggle-btn {
+  height: 12px;
+  width: 12px;
+  font-size: 20px;
+  float: right;
+  margin-right: 38px;
+  color: #fff;
+  padding: 10px;
+  background: #6070ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .headline {
@@ -89,7 +140,7 @@ li {
 }
 
 .description {
-  width: 327px;
+  width: 100%;
   height: 120px;
   font-style: normal;
   font-weight: normal;
@@ -119,12 +170,6 @@ li {
   letter-spacing: 0.03em;
   margin-top: 50px;
   background: white;
-}
-
-.social-items li {
-  margin-right: 15px;
-  color: #505f79;
-  transition: border-bottom 1s ease-in-out 0.2s;
 }
 
 .stacks ul li {
@@ -186,10 +231,10 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "card-1 card-1 card-1 card-1"
-    "card-2 card-2 card-2 card-2"
-    "card-3 card-3 card-3 card-3"
-    "card-4 card-4 card-4 card-4";
+    'card-1 card-1 card-1 card-1'
+    'card-2 card-2 card-2 card-2'
+    'card-3 card-3 card-3 card-3'
+    'card-4 card-4 card-4 card-4';
   grid-gap: 1rem;
   padding-top: 30px;
 }
@@ -320,7 +365,7 @@ img {
 }
 
 .about-desc {
-  width: 327px;
+  width: 100%;
   height: 144px;
   font-style: normal;
   font-weight: normal;
@@ -328,6 +373,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .about-connect {
@@ -434,8 +480,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 805px;
-  background: #1a30ff url("./images/contact-form-shapes-mobile.svg") no-repeat;
+  height: 890px;
+  background: #1a30ff url('./images/contact-form-shapes-mobile.svg') no-repeat;
   background-size: cover;
   padding: 35px;
   border-radius: 50px 0 0 0;
@@ -457,6 +503,12 @@ img {
   margin-right: 30px;
 }
 
+.form-class label {
+  color: white;
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+
 .form-text p {
   width: 327px;
   height: 102px;
@@ -471,13 +523,13 @@ img {
 }
 
 .form-class {
-  width: 375px;
+  width: 350px;
   display: flex;
   flex-direction: column;
 }
 
 input {
-  width: 327px;
+  width: 305px;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -491,7 +543,7 @@ input {
 }
 
 .form-class #mail-content {
-  width: 327px;
+  width: 305px;
   height: 114px;
   font-style: normal;
   font-weight: normal;
@@ -593,6 +645,10 @@ input {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .navbar ul a {
     display: flex;
     font-style: normal;
@@ -627,7 +683,7 @@ input {
   .hero {
     width: 100%;
     height: 700px;
-    background: rgb(255, 255, 255) url("./images/Header bg.svg") no-repeat;
+    background: rgb(255, 255, 255) url('./images/Header bg.svg') no-repeat;
     background-size: contain;
   }
 
@@ -758,7 +814,7 @@ input {
     display: flex;
     flex-direction: column;
     background:
-      #1a30ff url("./images/contact form background shapes.svg")
+      #1a30ff url('./images/contact form background shapes.svg')
       no-repeat;
     background-size: contain;
   }
@@ -768,8 +824,7 @@ input {
   }
 
   .form-class label {
-    color: white;
-    margin-bottom: 5px;
+    padding-left: 5px;
   }
 
   .form-text p {

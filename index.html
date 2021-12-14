@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -11,12 +12,11 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-204397688-1");
+      gtag('config', 'UA-204397688-1');
     </script>
 
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ola Ishola Portfolio home page</title>
@@ -40,17 +40,25 @@
           <a href="#">Olaish</a>
         </div>
         <nav>
-          <ul>
+          <ul class="desktop-nav">
             <li class="nav-link"><a href="#">Portfolio</a></li>
             <li class="nav-link"><a href="#">About</a></li>
             <li class="nav-link"><a href="#">Contact</a></li>
           </ul>
-          <i class="fas fa-bars menu"></i>
+          <i class="fas fa-bars menu" id="menu"></i>
         </nav>
+        <aside class="mobile-menu">
+          <button type="button" class="toggle-btn">X</button>
+          <ul>
+            <li class="nav-link"><a href="#work">Portfolio</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </aside>
       </header>
 
       <!-- Hero -->
-      <div class="hero">
+      <div class="hero" id="about">
         <section class="headline">
           <div class="title">
             <h1>I’m Oladipupo</h1>
@@ -103,7 +111,7 @@
         </section>
       </div>
 
-      <div class="work">
+      <div class="work" id="work">
         <section class="work-container">
           <div class="card card-item-1">
             <div class="card-work">
@@ -432,7 +440,7 @@
         </section>
       </div>
     </div>
-    <footer class="form-section">
+    <footer class="form-section" id="contact">
       <h2>Contact me</h2>
       <div class="form-text">
         <p>
@@ -476,5 +484,6 @@
       </form>
       <img class="bar" src="./images/Shape.svg" alt="bottom vertical bar" />
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
