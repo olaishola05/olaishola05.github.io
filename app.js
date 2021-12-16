@@ -5,8 +5,10 @@ const hamburger = document.querySelector('#menu');
 const navMenu = document.querySelector('.mobile-menu');
 const toggleBtn = document.querySelector('.toggle-btn');
 const navItems = document.querySelectorAll('.mobile-menu ul li');
-
+const modalContainer = document.querySelector('#projectDetails');
 const workSection = document.querySelector('.work-container');
+
+// Mobile Nav Menu
 
 const toggleSideMenu = false;
 const toggleCloseBtn = false;
@@ -32,25 +34,58 @@ function linksOnClick() {
   });
 }
 
-// Dynamically populate the work section
+// Renderring the work section
+
+/** Sorting technology */
+
+function sortTechnologyStacks(pop, techStacks) {
+  let stacks = '';
+  let stacksPopup = '';
+
+  techStacks.forEach((stack) => {
+    let i = 1;
+    if (!pop) {
+      if (stack.includes('ruby')) {
+        stacks += `<li class="hide-ruby">${stack}</li>`;
+      } else {
+        stacks += `<li>${stack}</li>`;
+      }
+    } else {
+      if (i <= 3) {
+        stacks += `<li>${stack}</li>`;
+      } else {
+        stacksPopup += `<li class="hide-ruby">${stack}</li>`;
+      }
+      i += 1;
+    }
+  });
+  return [stacks, stacksPopup];
+}
 
 let listOfProjects = '';
 for (let project = 0; project < projects.length; project += 1) {
-  let mobileStacks = '';
-  projects[project].stacks.forEach((stack) => {
-    if (stack.length > 3) {
-      mobileStacks += `<li>${stack}</li>`;
-    }
-  });
+  const techStacks = sortTechnologyStacks(false, projects[project].stacks);
+  let result = '';
 
+  if (techStacks.length > 3) {
+    result = `<div class="four-stacks">
+      <ul>
+      ${techStacks}
+      </ul>
+    </div>`;
+  } else {
+    result = `<div class="stacks">
+      <ul>
+      ${techStacks}
+      </ul>
+    </div>`;
+  }
   listOfProjects += `<div class="card desktop">
-  <img src="${projects[project].imageDesktop}" class="desktop" alt="${
-    projects[project].name
-  } project screenshot"/>
+  <img src="${projects[project].imageDesktop}" class="desktop" alt="${projects[project].name} project screenshot"/>
   <div class="work-details">
     <h2>${projects[project].name}</h2>
     <div class="card-caption">
-      <span>${projects[project].description}details[0]}</span>
+      <span>${projects[project].details[0]}</span>
       <img src="./images/Counter.svg" alt="counter icon" />
       <span>${projects[project].details[1]}</span>
       <img src="./images/Counter.svg" alt="counter icon" />
@@ -61,11 +96,7 @@ for (let project = 0; project < projects.length; project += 1) {
         ${projects[project].description}
       </p>
     </div>
-    <div class="stacks four-stacks">
-      <ul>
-        ${mobileStacks}
-      </ul>
-    </div>
+     ${result}
     <a href="#" class="work-btn" project-index="${project}">See Project</a>
   </div>
 </div>
@@ -73,9 +104,7 @@ for (let project = 0; project < projects.length; project += 1) {
 
 <div class='card mobile'>
     <div class='card-work'>
-      <img src="${projects[project].imageMobile}" class="mobile" alt="${
-    projects[project].name
-  } project screenshot"/>
+      <img src="${projects[project].imageMobile}" class="mobile" alt="${projects[project].name} project screenshot"/>
       <h2>${projects[project].mobileName}</h2>
       <div class='card-caption'>
         <span>${projects[project].detailsMobile[0]}</span>
@@ -89,29 +118,28 @@ for (let project = 0; project < projects.length; project += 1) {
           ${projects[project].description}
         </p>
       </div>
-      <div class='stacks four-stacks'>
+      <div class='stacks'>
         <ul>
-          ${projects[project].stacks.map((stack) => `<li>${stack}</li>`)}
+           ${techStacks[0]}
         </ul>
       </div>
       <a href='#' class='work-btn' project-index="${project}">
         See Project
       </a>
     </div>
-  </div>;
-
-`;
+  </div>`;
 
   workSection.innerHTML = listOfProjects;
 }
 
 function displayDetails(project) {
-  const projectPopup = document.querySelector('#projectDetails');
   let projectDetails = '';
+  const projectPopup = document.querySelector('#projectDetails');
+  const techStacks = sortTechnologyStacks(true, projects[project].stacksPopup);
   projectDetails += `<div class="modal">
           <div class="title-frame">
             <h2 class='desktop'>${projects[project].name} </h2>
-            <h2 class='mobile'>${projects[project].mobileName} </h2>
+            <h2 class='mobile'>${projects[project].mobileName}</h2>
             <button types="button" id="closeModal">X</button>
           </div>
 
@@ -126,36 +154,50 @@ function displayDetails(project) {
           <img class='mobile' src=${projects[project].imageMobile} alt="${projects[project].imageMobile} project work" />
           <img class='desktop' src=${projects[project].imageDesktop} alt="${projects[project].imageMobile} project work" />
 
-          <div class="content-sect desk-content">
-            <p class="modal-desc">
+          <div class="mobile-sect desk-content">
+            <p class="modal-desc desktop">
              ${projects[project].largeDescription}
             </p>
-            <div>
-              <div class="stacks">
-                <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
+            <p class="modal-desc mobile">
+             ${projects[project].mobileDescription}
+            </p>
+
+            <div class="mobile modal-mobile-stacks">
+            <ul>
+           <li>${projects[project].stacks[0]}</li>
+            <li>${projects[project].stacks[1]}</li>
+            <li>${projects[project].stacks[2]}</li>
+            </ul>
+            </div>
+            
+              <div class='desktop-modal-display'>
+              <div class="stacks modal-techs desktop">
+              <ul>${techStacks[0]}</ul>
+              <br>
               </div>
               <div class="modalBtn-container">
                 <a href="${projects[project].liveUrl}" class="modal-btn"
                   >See live <img src="./images/Icon.svg" alt="${projects[project].liveUrl} live link"
                 /></a>
-                <a href="${projects[project].sourceUrl}" class="modal-btn"
+                <a href="${projects[project].sourceUrl}" class="modal-btn modal-btn-extra"
                   >See Source <i class="fab fa-github"></i
                 ></a>
               </div>
+              </div>
+
             </div>
           </div>
         </div>`;
+
   projectPopup.innerHTML = projectDetails;
+  const closeModal = document.querySelector('#closeModal');
+  closeModal.addEventListener('click', () => {
+    modalContainer.classList.remove('show');
+  });
 }
 
-// Work  Section
+// Work  Section Btn
 const clickBtn = document.querySelectorAll('.work-btn');
-const modalContainer = document.querySelector('#projectDetails');
-const closeModal = document.querySelector('#closeModal');
 
 clickBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -164,11 +206,6 @@ clickBtn.forEach((btn) => {
   });
 });
 
-closeModal.addEventListener('click', () => {
-  modalContainer.classList.remove('show');
-});
-
 linksOnClick();
-
 hamburger.addEventListener('click', toggleNav);
 toggleBtn.addEventListener('click', toggleClose);

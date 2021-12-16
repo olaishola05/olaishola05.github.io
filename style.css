@@ -45,22 +45,8 @@ li {
   flex: 1;
 }
 
-.mobile-menu ul li a {
-  font-weight: 600;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.navbar .logo a {
-  width: 76px;
-  height: 20px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-  color: #6070ff;
+.modalBtn-container > a {
+  margin-right: 10px;
 }
 
 .navbar .menu {
@@ -94,10 +80,6 @@ li {
   transition: border-bottom 1s ease-in-out 0.2s;
 }
 
-.mobile-menu ul li {
-  line-height: 64px;
-}
-
 .toggle-btn {
   height: 12px;
   width: 12px;
@@ -116,18 +98,34 @@ li {
 }
 
 .modal {
+  position: fixed;
+  height: 100%;
+  top: 30px;
+  background-color: #fefefe;
+  z-index: 2;
+  width: 90%;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin-top: 20px;
-  max-width: 100%;
-  padding: 20px;
-  background-color: #fefefe;
-  width: 90% !important;
   overflow: auto;
+  padding: 20px;
 }
 
-.modalBtn-container > a {
-  margin-right: 10px;
+.mobile-menu ul li a {
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar .logo a {
+  width: 76px;
+  height: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #6070ff;
 }
 
 .title-frame {
@@ -154,6 +152,7 @@ li {
 
 .modal-caption {
   margin-bottom: 10px;
+  font-size: 13px;
 }
 
 .modal-description {
@@ -165,28 +164,28 @@ li {
 }
 
 .modalBtn-container {
-  width: 311px;
+  width: 275px;
   height: 56px;
   display: flex;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .modal-btn {
-  width: 136px;
+  width: 300px;
   height: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 14px;
+  justify-content: space-around;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
   color: #6070ff;
 }
 
-.content-sect {
-  display: flex;
-  flex-direction: column;
+.mobile-sect {
+  display: none;
 }
 
 .headline {
@@ -246,26 +245,9 @@ li {
   background: white;
 }
 
-.stacks ul li {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  color: #1a30ff;
-  text-align: center;
-  background: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
-}
-
 .social-items {
   display: flex;
   padding: 0;
-}
-
-.social-items li:hover {
-  border-bottom: 1px solid rgb(96, 112, 255);
-  transform: scale(1.5);
 }
 
 .card-work span,
@@ -287,14 +269,7 @@ img {
 .work-container {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-  /* grid-template-areas:
-    'card-1 card-1 card-1 card-1'
-    'card-2 card-2 card-2 card-2'
-    'card-3 card-3 card-3 card-3'
-    'card-4 card-4 card-4 card-4'; */
   grid-gap: 1rem;
-  /* padding-top: 30px; */
 }
 
 .desktop {
@@ -343,6 +318,10 @@ img {
 
 .stacks {
   margin-top: 10px;
+}
+
+.hide-ruby {
+  display: none;
 }
 
 .stacks ul {
@@ -672,7 +651,125 @@ input {
   color: #5e6c84;
 }
 
+.desk-content {
+  display: grid;
+}
+
+.modal-btn-extra i {
+  background-color: white;
+  color: #6070ff;
+}
+
+.modal-mobile-stacks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+.modal-mobile-stacks li {
+  background: #e5e5e5;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  min-width: 53px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  margin-right: 7px;
+}
+
+.stacks ul li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1a30ff;
+  text-align: center;
+  background: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.mobile-menu ul li {
+  line-height: 64px;
+}
+
+.social-items li:hover {
+  border-bottom: 1px solid rgb(96, 112, 255);
+  transform: scale(1.5);
+}
+
 @media only screen and (min-width: 900px) {
+  .modal-caption {
+    max-width: 1000px;
+    font-size: 15px;
+  }
+
+  .title-frame h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .modal-stacks ul li {
+    background: #e5e5e5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    width: 69px;
+    height: 16px;
+  }
+
+  .desk-content {
+    display: grid;
+    grid-template-columns: 3fr 306px;
+    grid-gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .modal-desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    margin: 12px 0;
+  }
+
+  .modal-techs ul {
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  .modal-techs ul li {
+    padding-right: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+  }
+
+  .modal-btn {
+    height: 40px;
+  }
+
   body {
     background: #e5e5e5;
     max-width: 100%;
@@ -935,13 +1032,13 @@ input {
       width 500ms ease-in-out, height 500ms ease-in-out;
     transform: translateY(-8px);
     width: 70%;
-    height: 200px;
   }
 
   .card > img {
     width: 50%;
     border-radius: 8px;
     padding-left: 10px;
+    padding-top: 10px;
   }
 
   .scale {
@@ -977,12 +1074,6 @@ input {
     padding: 0;
   }
 
-  .four-stacks ul {
-    width: 300px;
-    justify-content: space-between;
-    color: red;
-  }
-
   #desktop-7,
   #desktop-8 {
     display: flex;
@@ -1000,7 +1091,6 @@ input {
 
   .desktop {
     display: flex;
-    justify-content: center;
   }
 }
 
@@ -1010,17 +1100,14 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgba(76, 78, 82);
-  background-color: rgb(76, 78, 82, 0.2); */
-  background: #c1c7d0;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(10px);
-  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -1031,28 +1118,8 @@ input {
   opacity: 1;
 }
 
-.modal {
-  position: fixed;
-  width: 80% !important;
-  height: 100vh !important;
-  top: 30px;
-  overflow: auto;
-}
-
-.title-frame h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-}
-
 .modal > img {
   width: 100%;
   border-radius: 5px;
   padding: 1px;
 }
-
-/* .desk-content {
-  display: flex;
-  flex-direction: row;
-} */
