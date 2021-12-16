@@ -1030,11 +1030,8 @@ input {
     box-shadow: rgba(0, 0, 0, 0.12) 0 4px 6px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 12px 13px;
     box-shadow: rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    transition:
-      box-shadow 200ms ease-in-out,
-      transform 500ms ease-in-out,
-      width 500ms ease-in-out,
-      height 500ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out, transform 500ms ease-in-out,
+      width 500ms ease-in-out, height 500ms ease-in-out;
     transform: translateY(-8px);
     width: 70%;
   }
@@ -1127,4 +1124,24 @@ input {
   width: 100%;
   border-radius: 5px;
   padding: 1px;
+}
+
+/* Validation */
+#message {
+  visibility: visible;
+  min-width: 250px;
+  background-color: #6070ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  z-index: 1;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+#message.open {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
