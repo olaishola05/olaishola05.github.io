@@ -213,7 +213,7 @@
         </div>
         <form
           class="form-class"
-          actions="https://formspree.io/f/xzbopydg"
+          action="https://formspree.io/f/xzbopydg"
           method="POST"
         >
           <label for="name">Full Name: </label>
@@ -242,7 +242,7 @@
             required
             placeholder="Write your message here"
           ></textarea>
-          <div id="message">Error message</div>
+          <span id="message">Error message</span>
           <button class="contact-btn" type="submit" id="form-btn">
             Get In Touch
           </button>
@@ -255,5 +255,6 @@
     </div>
     <script type="module" src="app.js"></script>
     <script src="/utils/validation.js"></script>
+    <script src="/utils/storage.js"></script>
   </body>
 </html>
