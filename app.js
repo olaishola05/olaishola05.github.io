@@ -1,5 +1,5 @@
 // data for projects
-import { projects } from './utils/data.js';
+import { projects } from './JS/data.js';
 
 const hamburger = document.querySelector('#menu');
 const navMenu = document.querySelector('.mobile-menu');
