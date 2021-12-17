@@ -30,7 +30,7 @@ form.addEventListener('submit', (event) => {
   const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
 
   if (emailValid) {
-    form.submit();
+    // form.submit();
     form.reset();
   }
 });
