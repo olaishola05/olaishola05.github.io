@@ -1,4 +1,5 @@
 const form = document.querySelector('.form-class');
+const formIconContainer = document.querySelector('.form-icon')
 const emailRegex = /^([a-z@.0-9]{0,})+$/;
 const EMAIL_INVALID = 'Please enter email with lowercase letters';
 
@@ -19,9 +20,13 @@ function validateEmail(input, invalidMsg) {
 
   if (email !== email.toLowerCase() && !emailRegex.test(email)) {
     input.classList.toggle('errorMessage');
+    const formIcon = input.parentElement;
+    formIcon.classList.add('error')
     return toastMessage(invalidMsg);
   }
   input.classList.toggle('successMessage');
+  const formIcon = input.parentElement;
+  formIcon.classList.add('success')
   return true;
 }
 
@@ -30,7 +35,7 @@ form.addEventListener('submit', (event) => {
   const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
 
   if (emailValid) {
-    form.submit();
+    // form.submit();
     form.reset();
   }
 });

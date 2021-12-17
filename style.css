@@ -1140,6 +1140,24 @@ input {
   padding: 10px;
 }
 
+.form-icon i {
+  visibility: hidden;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+
+.form-icon.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-icon.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+  background-color: #fff;
+}
+
 #message.open {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
