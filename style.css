@@ -1030,8 +1030,11 @@ input {
     box-shadow: rgba(0, 0, 0, 0.12) 0 4px 6px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 12px 13px;
     box-shadow: rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    transition: box-shadow 200ms ease-in-out, transform 500ms ease-in-out,
-      width 500ms ease-in-out, height 500ms ease-in-out;
+    transition:
+      box-shadow 200ms ease-in-out,
+      transform 500ms ease-in-out,
+      width 500ms ease-in-out,
+      height 500ms ease-in-out;
     transform: translateY(-8px);
     width: 70%;
   }
