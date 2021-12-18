@@ -8,12 +8,12 @@ function setItemToLocalStorage() {
     email: userEmail.value,
     message: userMessage.value,
   };
-  localStorage.setItem('FormsData', JSON.stringify(formData));
+  localStorage.setItem('FormData', JSON.stringify(formData));
 }
 
 const getFormInputs = document.querySelectorAll('input, textarea');
 for (let input = 0; input < getFormInputs.length; input += 1) {
-  getFormInputs[input].addEventListener('changes', () => {
+  getFormInputs[input].addEventListener('change', () => {
     setItemToLocalStorage();
   });
 }
