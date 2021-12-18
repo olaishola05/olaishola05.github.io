@@ -1128,3 +1128,51 @@ input {
   border-radius: 5px;
   padding: 1px;
 }
+
+/* Validation */
+#message {
+  visibility: hidden;
+  min-width: 190px;
+  background-color: #6070ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+/* Validation Icons */
+.form-icon i {
+  visibility: hidden;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+
+.form-icon.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-icon.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+  background-color: #fff;
+}
+
+#message.open {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.successMessage {
+  border: 2px solid lightgreen;
+}
+
+.errorMessage {
+  border: 2px solid red;
+}
