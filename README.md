@@ -11,7 +11,7 @@
 ![about](./images/contact-form.png)
 ![Desktop-version](./images/desktop.png)
 
-A developer portfolio to house all my projects
+A developer portfolio to house all my projects built using a well-crafted Figma design, JavaScript, HTML, and CSS with a section for showcasing projects.
 
 ## Built With
 
