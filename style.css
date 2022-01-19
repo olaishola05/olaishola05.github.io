@@ -200,7 +200,6 @@ li {
 
 .title h1,
 .title h2 {
-  width: 327px;
   height: 50px;
   font-style: normal;
   font-weight: bold;
@@ -228,7 +227,7 @@ li {
   width: 327px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-left: 10px;
 }
 
 .connect {
@@ -339,6 +338,7 @@ img {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .work-btn {
@@ -383,7 +383,8 @@ img {
 .about {
   width: 320px;
   height: 101px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 10px;
   margin-bottom: 12px;
 }
 
@@ -405,10 +406,10 @@ img {
   font-style: normal;
   font-weight: normal;
   color: #344563;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   margin: 0 auto;
-  padding: 5px;
+  margin-left: 10px;
 }
 
 .about-connect {
@@ -795,7 +796,7 @@ input {
   }
 
   .menu {
-    display: none;
+    display: none !important;
   }
 
   .mobile-menu {
@@ -1030,11 +1031,7 @@ input {
     box-shadow: rgba(0, 0, 0, 0.12) 0 4px 6px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 12px 13px;
     box-shadow: rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    transition:
-      box-shadow 200ms ease-in-out,
-      transform 500ms ease-in-out,
-      width 500ms ease-in-out,
-      height 500ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out, transform 500ms ease-in-out, width 500ms ease-in-out, height 500ms ease-in-out;
     transform: translateY(-8px);
     width: 70%;
   }
