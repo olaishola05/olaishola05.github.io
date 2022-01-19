@@ -19,9 +19,13 @@ function validateEmail(input, invalidMsg) {
 
   if (email !== email.toLowerCase() && !emailRegex.test(email)) {
     input.classList.toggle('errorMessage');
+    const formIcon = input.parentElement;
+    formIcon.classList.add('error');
     return toastMessage(invalidMsg);
   }
   input.classList.toggle('successMessage');
+  const formIcon = input.parentElement;
+  formIcon.classList.add('success');
   return true;
 }
 
