@@ -19,7 +19,7 @@ export const projects = [
     imageMobile: './images/todos.png',
     popupImageDesktop: './images/todo-edit.png',
     popupImageMobile: './images/todo-edit.png',
-    liveUrl: 'netman5.github.io/to-do/',
+    liveUrl: 'https://netman5.github.io/To-do/',
     sourceUrl: 'https://github.com/netman5/To-do',
   },
   {
