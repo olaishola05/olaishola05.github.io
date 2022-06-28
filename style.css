@@ -315,6 +315,7 @@ img {
   color: #344563;
 }
 
+
 .stacks {
   margin-top: 10px;
 }
@@ -324,14 +325,11 @@ img {
 }
 
 .stacks ul {
-  width: 203px;
-  height: 30px;
+  width: 80%;
+  height: 40px;
   background: white;
   display: flex;
-  justify-content: space-between;
-  margin-right: 10px;
-  align-items: center;
-  padding: 0;
+  gap: 20px;
 }
 
 .card-work > img {
