@@ -49,11 +49,11 @@ export const projects = [
     mobileName: 'Rent A Car',
     detailsMobile: ['Academic', 'Front-End Dev', 2022],
     details: ['Academic', 'Front-End Dev', 2022],
-    description: "A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.",
+    description: 'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
     largeDescription:
-      "A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.",
+      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
     mobileDescription:
-      "A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.",
+      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
     stacks: ['React', 'Redux', 'Ruby on Rails'],
     stacksPopup: ['React', 'Redux', 'Ruby on Rails', 'Bootstrap', 'PostgreSQL'],
     imageDesktop: './images/rentcar.png',
@@ -63,24 +63,4 @@ export const projects = [
     liveUrl: 'rent-a-car-fe.netlify.app/',
     sourceUrl: 'https://github.com/netman5/Rent-a-car-FE',
   },
-  // {
-  //   id: randomID(),
-  //   name: 'Uber Navigation',
-  //   details: ['Uber', 'Lead Developer', 2018],
-  //   mobileName: 'Multi-Post Stories',
-  //   detailsMobile: ['CANOPY', 'Backend End Dev', 2015],
-  //   description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  //   largeDescription:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  //   mobileDescription:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  //   stacks: ['html', 'css', 'javaScript'],
-  //   stacksPopup: ['html', 'Ruby on rails', 'css', 'javaScript'],
-  //   imageDesktop: './images/avail.svg',
-  //   imageMobile: './images/art-printing.svg',
-  //   popupImageDesktop: './images/avail.svg',
-  //   popupImageMobile: './images/art-printing.svg',
-  //   liveUrl: '',
-  //   sourceUrl: '',
-  // },
 ];
