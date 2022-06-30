@@ -1,7 +1,6 @@
 {
   "name": "micronaut",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "app.js",
   "scripts": {
