@@ -33,7 +33,6 @@ export const projects = [
       'SpaceX is a web app built with react, redux and react-router-dom that pull data from SpaceX API endpoints with functionalities to selecting a mission or booking a rocket, also to leave a mission and a rocket',
     mobileDescription:
       'SpaceX is a web app that pull data from SpaceX API endpoints with functionalities to selecting a mission or booking a rocket.',
-
     stacks: ['React', 'CSS', 'React-router'],
     stacksPopup: ['React', 'CSS', 'Babel, React-router'],
     imageDesktop: './images/spacex.png',
