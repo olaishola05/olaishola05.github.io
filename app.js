@@ -75,7 +75,7 @@ for (let project = 0; project < projects.length; project += 1) {
     </div>`;
   } else {
     result = `<div class="stacks">
-      <ul>
+      <ul class='three-stack'>
       ${techStacks}
       </ul>
     </div>`;
@@ -93,7 +93,7 @@ for (let project = 0; project < projects.length; project += 1) {
     </div>
     <div class="work-text">
       <p>
-        ${projects[project].description}
+        ${`${projects[project].description.slice(0, 105)}...`}
       </p>
     </div>
      ${result}
@@ -169,7 +169,7 @@ function displayDetails(project) {
             <li>${projects[project].stacks[2]}</li>
             </ul>
             </div>
-            
+
               <div class='desktop-modal-display'>
               <div class="stacks modal-techs desktop">
               <ul>${techStacks[0]}</ul>
