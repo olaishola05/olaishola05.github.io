@@ -34,7 +34,7 @@ export const projects = [
     mobileDescription:
       'SpaceX is a web app that pull data from SpaceX API endpoints with functionalities to selecting a mission or booking a rocket.',
     stacks: ['React', 'CSS', 'React-router'],
-    stacksPopup: ['React', 'CSS', 'Babel, React-router'],
+    stacksPopup: ['React', 'CSS', 'Babel', 'React-router'],
     imageDesktop: './images/spacex.png',
     imageMobile: './images/spacex.png',
     popupImageDesktop: './images/spacex.png',
@@ -48,18 +48,18 @@ export const projects = [
     mobileName: 'Rent A Car',
     detailsMobile: ['Academic', 'Front-End Dev', 2022],
     details: ['Academic', 'Front-End Dev', 2022],
-    description: 'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
+    description: 'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend.',
     largeDescription:
-      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
+      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend.',
     mobileDescription:
-      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend. The backend can be found here.',
+      'A car booking app where a user can rent a car. The app also presents Admin privileges where an Admin can Add and Delete cars. This is engineered using Ruby on Rails as backend and React as front end. In this repository we have the frontend.',
     stacks: ['React', 'Redux', 'Ruby on Rails'],
     stacksPopup: ['React', 'Redux', 'Ruby on Rails', 'Bootstrap', 'PostgreSQL'],
     imageDesktop: './images/rentcar.png',
     imageMobile: './images/rentcar.png',
     popupImageDesktop: './images/rentcar.png',
     popupImageMobile: './images/rentcar.png',
-    liveUrl: 'rent-a-car-fe.netlify.app/',
+    liveUrl: 'https://rent-a-car-fe.netlify.app/',
     sourceUrl: 'https://github.com/netman5/Rent-a-car-FE',
   },
 ];

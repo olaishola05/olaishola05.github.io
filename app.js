@@ -115,7 +115,7 @@ for (let project = 0; project < projects.length; project += 1) {
       </div>
       <div class='work-text'>
         <p>
-          ${projects[project].description}
+          ${`${projects[project].description.slice(0, 105)}...`}
         </p>
       </div>
       <div class='stacks'>
