@@ -396,7 +396,7 @@ img {
 }
 
 .about-desc {
-  width: 100%;
+  width: 95%;
   height: 144px;
   font-style: normal;
   font-weight: normal;
@@ -404,7 +404,7 @@ img {
   font-size: 15px;
   line-height: 24px;
   margin: 0 auto;
-  margin-left: 10px;
+  text-align: justify;
 }
 
 .about-connect {
